@@ -1,0 +1,88 @@
+/* CSS portfolio Erwin Oudgenoeg */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.cl_topmenu {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 50px;
+    width: 100%;
+/*    overflow: hidden;*/
+    color: gray;
+    text-shadow: 5px 2px 4px black;
+    justify-content: center;
+    background-color: green;
+
+}
+/* Style the top navigation bar */
+.cl_topmenu ul {
+  list-style-type: none;
+  margin: 0 ;
+  padding: 0;
+}
+/* Style the topnav links */
+.cl_topmenu li {
+  display: inline;
+}
+
+/* Style the topnav links */
+.cl_topmenu li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  vertical-align: top;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.cl_topmenu a:hover {
+  background-color: #111;
+}
+
+.cl_centre {
+  text-align: center;
+}
+.cl_title_mid{
+    padding-top: 100px;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    font-size: 30pt;
+    text-shadow: 5px 2px 4px black;
+}
+.cl_title_mid_hid{
+    height: 50px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 1000px) {
+    .cl_row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+.cl_submit {
+    background-color: #3fb6b2;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+.cl_submit:hover {
+    background-color: #43a09d;
+}
