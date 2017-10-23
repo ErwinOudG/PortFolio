@@ -17,22 +17,21 @@
     </head>
 
     <body class="cl_mainarticle">
+        <?php
+        include "./php_files/topmenu.php";
+        ?>
+        <!--
         <nav class="cl_topmenu cl_centre">
             <ul class="cl_topmenu">
-                <?php
-                    include "/php_files/topmenu.php";
-                ?>
-                <!--
+
                 <li class="cl_litopmenu"><a href="#id_tag1">Home</a></li>
                 <li class="cl_litopmenu"><a href="#id_tag2">POP</a></li>
                 <li class="cl_litopmenu"><a href="#id_tag3">CV</a></li>
                 <li class="cl_litopmenu"><a href="#id_tag4">Certificaten</a></li>
                 <li class="cl_litopmenu"><a href="#id_tag5">Over</a></li>
                 <li class="cl_litopmenu"><a href="#id_tag6">Contact</a></li>
-            -->
             </ul>
         </nav>
-<!--        <div class="cl_title_mid_hid">Portfolio Erwin Oudgenoeg</div> -->
         <div id="id_tag1" class="cl_title_mid">Home</div>
         <div id="id_tag2" class="cl_title_mid">POP</div>
         <div id="id_tag3" class="cl_title_mid">CV</div>
@@ -91,7 +90,8 @@
                        </form>
                    </center>
         </div>
+    -->
     </body>
-    <script src="/js_files/script.js"></script>
+<!--    <script src="/js_files/script.js"></script> -->
     <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
 </html>
