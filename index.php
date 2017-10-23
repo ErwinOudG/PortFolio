@@ -19,12 +19,17 @@
     <body class="cl_mainarticle">
         <nav class="cl_topmenu cl_centre">
             <ul class="cl_topmenu">
+                <?php
+                    include "/php_files/topmenu.php";
+                ?>
+                <!--
                 <li class="cl_litopmenu"><a href="#id_tag1">Home</a></li>
                 <li class="cl_litopmenu"><a href="#id_tag2">POP</a></li>
                 <li class="cl_litopmenu"><a href="#id_tag3">CV</a></li>
                 <li class="cl_litopmenu"><a href="#id_tag4">Certificaten</a></li>
                 <li class="cl_litopmenu"><a href="#id_tag5">Over</a></li>
                 <li class="cl_litopmenu"><a href="#id_tag6">Contact</a></li>
+            -->
             </ul>
         </nav>
 <!--        <div class="cl_title_mid_hid">Portfolio Erwin Oudgenoeg</div> -->
