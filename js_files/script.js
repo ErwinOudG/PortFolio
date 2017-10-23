@@ -13,3 +13,5 @@ $(document).ready(function(){
     }
   });
 });
+
+// document.getElementById("id_tag1").innerHTML = ;
