@@ -92,6 +92,6 @@
         </div>
     -->
     </body>
-<!--    <script src="/js_files/script.js"></script> -->
+    <script src="/js_files/script.js"></script>
     <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
 </html>
