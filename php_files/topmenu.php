@@ -1,4 +1,7 @@
 <?php
+include "../../private_html/dev/php_files/dbvars.php";
+include "../../private_html/dev/php_files/track.php";
+
 $ar_menu_top = array("Home"=>"id_tag1",
                      "POP"=>"id_tag2",
                      "CV"=>"id_tag3",
