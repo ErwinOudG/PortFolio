@@ -12,8 +12,8 @@ foreach($ar_menu_top as $menu_name => $menu_tag){
 };
 echo '</ul></nav>';
 foreach($ar_menu_top as $menu_name => $menu_tag){
-    echo '<div id="'.$menu_tag. '" class="cl_title_mid">'.$menu_name.'</div>';
-    // echo '<br><p>Erwin '.$menu_name.'</p><br>';
+    echo '<div id="'.$menu_tag. '" class="cl_title_mid">'.$menu_name.'<br><p class="cl_centre">Erwin '.$menu_name.'</p><br></div>';
+    // echo '<br><p class="cl_centre">Erwin '.$menu_name.'</p><br>';
 
 }
 ?>
