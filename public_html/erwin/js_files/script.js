@@ -1,3 +1,13 @@
+// Break out of an iframe, if someone shoves your site
+// into one of those silly top-bar URL shortener things.
+//
+// Passing `this` and re-aliasing as `window` ensures
+// that the window object hasn't been overwritten.
+  (function(window) {
+    if (window.location !== window.top.location) {
+      window.top.location = window.location;
+    }
+  })
 
 // this snippet scrolls slowly to id (hash)
 // future addon animate switch
