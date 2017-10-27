@@ -30,8 +30,11 @@
       </script>
 
         <?php
+        echo "t0";
         include "../../private_html/erwin/php_files/track.php";
+        echo "t1";
         include "../../private_html/erwin/php_files/topmenu.php";
+        echo "t2";
         ?>
     </body>
     <script src="/js_files/script.js"></script>

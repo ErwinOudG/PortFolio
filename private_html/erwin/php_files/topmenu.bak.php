@@ -24,24 +24,23 @@ $sql = ("SELECT menu_item_name
         echo "6";
 $result = $conn->query($sql);
 echo "7";
-// $ar_menuitemname = mysqli_fetch_all($result,MYSQLI_ASSOC);
-while( $row = $result->fetch_assoc() ) {
-    foreach( $row  AS $value ) {
-        $ar_menuitemname[] = $value;
-    }
-}
-var_dump( $ar_menuitemname );
+$ar_menuitemname = mysqli_fetch_all($result,MYSQLI_ASSOC);
+// var_dump( $ar_menuitemname );
 echo "8";
 
 echo '<nav class="cl_topmenu cl_centre"><ul class="cl_topmenu">';
 $arrlength=count($ar_menuitemname);
 // echo .$arrlength.;
 if ($arrlength>0) {
-    for($x=0;$x<$arrlength;$x++)
-    {
-        // $strTXT = $ar_menuitemname[menu_item_name];
-        echo '<li><a href="#id'.$ar_menuitemname[$x].'">'.$ar_menuitemname[$x].'</a></li>';
+    foreach($ar_menuitemname as $menu_item_name => $menu_tag){
+        echo '<li><a href="#'.$menu_tag.'">'.$menu_tag.'</a></li>';
     }
+
+    // for($x=0;$x<$arrlength;$x++)
+    // {
+    //     $strTXT = $ar_menuitemname[$x];
+    //     echo '<li><a href="#id'.$strTXT.'">'.$strTXT.'</a></li>';
+    // }
     echo '</ul></nav>';
     for($x=0;$x<$arrlength;$x++)
     {
