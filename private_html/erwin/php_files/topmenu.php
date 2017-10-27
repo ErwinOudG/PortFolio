@@ -15,7 +15,7 @@ $sql = ("SELECT menu_item_name
         ORDER BY menu_order")
         ;
 $result = $conn->query($sql);
-$ar_menuitemname = mysqli_fetch_all($result, MYSQLI_NUM);
+$ar_menuitemname = mysqli_fetch_all($result,MYSQLI_NUM);
 // if ($result->num_rows > 0) {
     // output data of each row
     // while($row = $result->fetch_assoc()) {
