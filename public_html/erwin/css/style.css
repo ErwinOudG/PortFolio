@@ -5,7 +5,7 @@
     text-decoration: none;
 }
 body {
-    background-image: url("/img/pattern.jpg");
+    background-image: url("./img/pattern.jpg");
 }
 
 ul {

@@ -7,9 +7,9 @@
     <head>
         <title>Portfolio Erwin Oudgenoeg</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -30,14 +30,14 @@
       </script>
 
         <?php
-        echo "t0";
-        include "../../private_html/erwin/php_files/track.php";
-        echo "t1";
-        include "../../private_html/erwin/php_files/topmenu.php";
-        echo "t2";
+        // echo "t0";
+        include "../../private_html/erwin/php/track.php";
+        // echo "t1";
+        include "../../private_html/erwin/php/topmenu.php";
+        // echo "t2";
         ?>
     </body>
-    <script src="/js_files/script.js"></script>
+    <script src="./js/script.js"></script>
     <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->

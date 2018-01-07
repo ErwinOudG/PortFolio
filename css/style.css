@@ -1,0 +1,153 @@
+/* CSS portfolio Erwin Oudgenoeg */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.topmenu {
+  /*grid-area: header;*/
+}
+
+.id1 .id2 .id3 .id4 .id5 .id6{
+  /*grid-area: main;*/
+}
+
+body {
+  background-image: url("../img/pattern.jpg");
+  /*display: grid;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
+  grid-template-areas:
+  "header header header header header"
+  "n n main n n"
+  "footer footer footer footer";*/
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=text] {
+    /*width: 100%;*/
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+input[type=email] {
+    /*width: 100%;*/
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+input[type=password] {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.cl_submit {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: #11c61d;
+    /*padding: 12px 45px;*/
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    /*border: none;*/
+    /*outline: none;*/
+    /*margin: 0;*/
+    font-weight: bold;
+}
+
+.cl_topmenu {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 50px;
+    width: 100%;
+/*    overflow: hidden;*/
+    color: gray;
+    /*text-shadow: 5px 2px 4px black;*/
+    justify-content: center;
+    background-color: #11c61d;
+
+}
+/* Style the top navigation bar */
+.cl_topmenu ul {
+  list-style-type: none;
+  margin: 0 ;
+  padding: 0;
+}
+.ww {
+  margin: 110;
+  padding: 10;
+  font-size: 12pt;
+
+}
+/* Style the topnav links */
+.cl_topmenu li {
+  display: inline;
+}
+
+/* Style the topnav links */
+.cl_topmenu li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  vertical-align: top;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.cl_topmenu a:hover {
+  background-color: #111;
+}
+
+.cl_no_bullets {
+  list-style-type: none;
+}
+.cl_centre {
+  text-align: center;
+}
+.cl_title_mid{
+    padding-top: 100px;
+    height: 100vh;
+    text-align: center;
+/*    color: white;*/
+    font-size: 30pt;
+    /*text-shadow: 5px 2px 4px black;*/
+}
+.cl_title_mid_hid{
+    height: 50px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 1000px) {
+    .cl_row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+.cl_submit:hover {
+    background-color: #0ad317;
+}
+.error {
+  color: #FF0000;
+}
