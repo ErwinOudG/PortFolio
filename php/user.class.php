@@ -8,7 +8,7 @@ require_once("./funclib.php");
 /**
  * user class
  */
-class User extends AnotherClass
+class User # extends AnotherClass
 {
 
   function __construct(argument)
