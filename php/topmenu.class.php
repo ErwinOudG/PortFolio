@@ -44,39 +44,35 @@ class TopMenu # extends AnotherClass
   }
 
   function createMenu() {
-    $result = '<nav id="topmenu" class="cl_topmenu cl_centre"><ul class="cl_topmenu">';
 
     // generate menu from Array
     $arrlength=count($this->ar_menuitemname);
     if ($arrlength>0) {
-        for($x=0;$x<$arrlength;$x++)
-        {
-            $result .= '<li><a href="#id'.$this->ar_itemnum[$x].'">'.$this->ar_menuitemname[$x].'</a></li>';
+      echo '<nav id="topmenu" class="cl_topmenu cl_centre"><ul class="cl_topmenu">';
+      for($x=0;$x<$arrlength;$x++) {
+        echo '<li><a href="#id'.$this->ar_itemnum[$x].'">'.$this->ar_menuitemname[$x].'</a></li>';
+      }
+      echo '</ul></nav>';
+      // generate div's from array
+      for($x=0;$x<$arrlength;$x++) {
+        // $menucontent = "&lt?php include('pw.php'); ?&gt";
+        echo '<div id="id'.$this->ar_itemnum[$x]. '" class="cl_title_mid">';
+        echo $this->ar_menuitemname[$x];
+        echo '<br><p class="cl_centre">';
+        echo 'Erwin '.$this->ar_menuitemname[$x];
+        echo '</p><br>';
+        $filetest = "./php/mitem".$this->ar_itemnum[$x].".php";
+        echo '<br>';
+        if (file_exists($filetest)) {
+          echo '<br><p>';
+          // echo '&lt?php include('.$filetest.'); ?&gt';
+          include($filetest);
+          echo '</p><br>';
         }
-        $result .= '</ul></nav>';
-    // generate div's from array
-        for($x=0;$x<$arrlength;$x++) {
-          // $menucontent = "&lt?php include('pw.php'); ?&gt";
-            $result .= '<div id="id'.$this->ar_itemnum[$x]. '" class="cl_title_mid">';
-            $result .= $this->ar_menuitemname[$x];
-            $result .= '<br><p class="cl_centre">';
-            $result .= 'Erwin '.$this->ar_menuitemname[$x];
-            $result .= '</p><br>';
-            $filetest = "./php/mitem".$this->ar_itemnum[$x].".php";
-            $result .= '<br>';
-            if (file_exists($filetest)) {
-              $result .= '<br><p>';
-              $result .= '<?php include('.$filetest.'); ?>';
-              // $result .= 'include('.$filetest.');';
-              $result .= '</p><br>';
-            }
-            $result .= '</div>';
+        echo '</div>';
         }
-    }
-    else {
-        $result = "geen menu items gevonden";
-    }
-    return $result;
+    } else {echo "geen menu items gevonden";}
+    // return $result;
   }
 
   function help(){

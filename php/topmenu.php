@@ -10,8 +10,8 @@ ini_set('display_errors', 'On');
 error_reporting(E_ALL | E_STRICT);
 
 $topmenu = new TopMenu();
-console_log($topmenu->createMenu());
-echo $topmenu->createMenu();
+// console_log($topmenu->createMenu());
+$topmenu->createMenu();
 
 
 
