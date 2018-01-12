@@ -95,8 +95,8 @@ input[type=password] {
   padding: 0;
 }
 .ww {
-  margin: 110;
-  padding: 10;
+  /* margin: 110; */
+  /* padding: 10; */
   font-size: 12pt;
 
 }
