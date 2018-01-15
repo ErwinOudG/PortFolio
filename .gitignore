@@ -1,3 +1,10 @@
+# external framworks #
+######################
+hint.css
+materialize.min.css
+materialize.min.js
+jquery-3.2.1.min.js
+
 # Compiled source #
 ###################
 *.com
@@ -39,3 +46,4 @@ Thumbs.db
 # My files #
 ############
 dbvars.php
+*.jpg
