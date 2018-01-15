@@ -6,6 +6,8 @@ if(!isset($_SESSION)){
 // include "./php/dbvars.php";
 require_once("./php/dbvars.php");
 require_once("./php/funclib.php");
+$_SESSION["hits"] ++;
+// console_log()$_SERVER['SERVER_NAME']);
 $subdomainname = "erwin";
 $gm_date = gmdate("Y m d h:i:s");
 $s_remaddr = $_SERVER['REMOTE_ADDR'];
