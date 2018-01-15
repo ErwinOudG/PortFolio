@@ -33,6 +33,7 @@ class TopMenu # extends AnotherClass
     }
     // close database
     mysqli_close($conn);
+
   }
 
   function menuItemName() {
@@ -42,8 +43,13 @@ class TopMenu # extends AnotherClass
   function itemNumber() {
     return $this->ar_itemnum;
   }
+  function itemNumberJSON() {
+    return json_encode($this->ar_itemnum);
+  }
 
   function createMenu() {
+
+    echo "<script>var topmenu =".$this->itemNumberJSON().";</script>";
 
     // generate menu from Array
     $arrlength=count($this->ar_menuitemname);
@@ -55,20 +61,8 @@ class TopMenu # extends AnotherClass
       echo '</ul></nav>';
       // generate div's from array
       for($x=0;$x<$arrlength;$x++) {
-        // $menucontent = "&lt?php include('pw.php'); ?&gt";
         echo '<div id="id'.$this->ar_itemnum[$x]. '" class="cl_title_mid">';
         echo $this->ar_menuitemname[$x];
-        echo '<br><p class="cl_centre">';
-        echo 'Erwin '.$this->ar_menuitemname[$x];
-        echo '</p><br>';
-        $filetest = "./php/mitem".$this->ar_itemnum[$x].".php";
-        echo '<br>';
-        if (file_exists($filetest)) {
-          echo '<br><p>';
-          // echo '&lt?php include('.$filetest.'); ?&gt';
-          include($filetest);
-          echo '</p><br>';
-        }
         echo '</div>';
         }
     } else {echo "geen menu items gevonden";}

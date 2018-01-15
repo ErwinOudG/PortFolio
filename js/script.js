@@ -26,3 +26,11 @@ $(function() {
        }
      });
    });
+
+$( document ).ready(function() {
+  for (var i = 0; i < topmenu.length; i++) {
+    if ($("#id" + topmenu[i].toString()).length) {
+        $("#id" + topmenu[i].toString()).load("./php/mitem" + topmenu[i].toString() + ".php");
+    }
+  }
+});
