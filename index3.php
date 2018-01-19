@@ -20,14 +20,15 @@ if(!isset($_SESSION)){
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="./css/materialize.css"  media="screen,projection"/>
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="./favicon.ico" type="image/x-icon">
     </head>
 
-    <body class="cl_mainarticle" >
+    <body class="tm_mainarticle" >
+      <div></div>
 
         <?php
         ini_set('display_errors', 'On');
@@ -40,22 +41,15 @@ if(!isset($_SESSION)){
         require_once("./php/funclib.php"); //load my fuction library
         require_once("./php/topmenu.class.php"); // load class of my top menu
         $topmenu = new TopMenu(); // create topmenu object
+        // console_log(json_encode($topmenu));
         // echo "<script>var topmenu =".$topmenu->itemNumberJSON().";</script>";
-        console_log(json_encode($topmenu));
-
-        $topmenu->createMenu();
+        // $topmenu->createMenu();
+        // include "./php/mitem4.php"; // menu item 4 ( certificates )
 
         ?>
-   <script>
-
- $(document).ready(function(){
-   $('.collapsible').collapsible();
- });
-
-   </script>
     </body>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
-    <script type="text/javascript" src="./js/materialize.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/materialize.js"></script>
+    <script src="./js/script3.js"></script>
 
 </html>

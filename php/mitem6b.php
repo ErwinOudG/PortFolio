@@ -21,7 +21,7 @@ $_SESSION["mailkeep"] = "";
 <!-- Portfolio van en door Erwin Oudgenoeg  -->
 <!-- copyrights  E.A. Oudgenoeg-->
 <!-- form met materialize -->
-<div class="container">
+<div class="container">Gebruikers registratie
   <div class="row">
     <form class="col s12" action="./php/ww_action.php" method="post">
       <div class="row">

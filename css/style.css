@@ -64,7 +64,7 @@ input[type=password] {
     border-radius: 5px;
 }
 
-.cl_submit {
+.tm_submit {
     width: 200px;
     padding: 12px 20px;
     margin: 8px 0;
@@ -80,14 +80,13 @@ input[type=password] {
     font-weight: bold;
 }
 
-.cl_topmenu {
+.tm_topmenu {
     z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
     min-height: 50px;
     width: 100%;
-/*    overflow: hidden;*/
     color: gray;
     /*text-shadow: 5px 2px 4px black;*/
     justify-content: center;
@@ -95,7 +94,7 @@ input[type=password] {
 
 }
 /* Style the top navigation bar */
-.cl_topmenu ul {
+.tm_topmenu ul {
   list-style-type: none;
   margin: 0 ;
   padding: 0;
@@ -107,12 +106,12 @@ input[type=password] {
 
 }
 /* Style the topnav links */
-.cl_topmenu li {
+.tm_topmenu li {
   display: inline;
 }
 
 /* Style the topnav links */
-.cl_topmenu li a {
+.tm_topmenu li a {
   display: inline-block;
   color: white;
   text-align: center;
@@ -122,36 +121,36 @@ input[type=password] {
 }
 
 /* Change color on hover */
-.cl_topmenu a:hover {
+.tm_topmenu a:hover {
   background-color: #111;
 }
 
-.cl_no_bullets {
+.tm_no_bullets {
   list-style-type: none;
 }
-.cl_centre {
+.tm_centre {
   text-align: center;
 }
-.cl_title_mid{
+.tm_title_mid{
     padding-top: 100px;
-    height: 100vh;
+    /* height: 100vh; */
     text-align: center;
 /*    color: white;*/
     font-size: 30pt;
     /*text-shadow: 5px 2px 4px black;*/
 }
-.cl_title_mid_hid{
+.tm_title_mid_hid{
     height: 50px;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 1000px) {
-    .cl_row {
+    .tm_row {
       -webkit-flex-direction: column;
       flex-direction: column;
     }
 }
-.cl_submit:hover {
+.tm_submit:hover {
     background-color: #0ad317;
 }
 .error {

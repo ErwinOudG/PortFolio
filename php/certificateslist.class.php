@@ -1,6 +1,11 @@
 <?php
-include "./php/dbvars.php";
-require_once("./php/certificate.class.php"); // load class of a certificate
+if (substr(getcwd(), -3) == "php") {
+  include "./dbvars.php";
+  require_once("./certificate.class.php"); // load class of a certificate
+} else {
+  include "./php/dbvars.php";
+  require_once("./php/certificate.class.php"); // load class of a certificate
+}
 /**
  * Class for creating a object with list of my certificates
  */

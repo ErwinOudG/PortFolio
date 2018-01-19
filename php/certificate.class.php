@@ -1,5 +1,9 @@
 <?php
-include "./php/dbvars.php";
+if (substr(getcwd(), -3) == "php") {
+  include "./dbvars.php";
+} else {
+  include "./php/dbvars.php";
+}
 /**
  * Class for creating a object with list of my certificates
  */

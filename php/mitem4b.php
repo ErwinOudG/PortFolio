@@ -3,13 +3,8 @@
 if(!isset($_SESSION)){
   session_start();
 }
-if (substr(getcwd(), -3) == "php") {
-  require_once("./funclib.php");
-  require_once("./certificateslist.class.php"); // load class of my list of certificates
-} else {
-  require_once("./php/funclib.php");
-  require_once("./php/certificateslist.class.php"); // load class of my list of certificates
-}
+require_once("./funclib.php");
+require_once("./certificateslist.class.php"); // load class of my list of certificates
 
 if (!isset($_SESSION["suc6"])) {
 $_SESSION["Err"] = "";
@@ -18,7 +13,7 @@ $_SESSION["namekeep"] = "";
 $_SESSION["mailkeep"] = "";
 }
 echo "Mijn certificaten";
-$mycert = new CertificatesList();
+// $mycert = new CertificatesList();
 
 ?>
 <div class="container">

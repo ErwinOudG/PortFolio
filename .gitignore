@@ -2,7 +2,9 @@
 ######################
 hint.css
 materialize.min.css
+materialize.css
 materialize.min.js
+materialize.js
 jquery-3.2.1.min.js
 
 # Compiled source #
